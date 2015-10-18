@@ -1,0 +1,32 @@
+body {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#hero {
+  background-color: #9C27B0;
+  color: white;
+  font-size: 32px;
+  padding: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.box {
+  margin: 10px 0 10px 0;
+  border: dotted 2px;
+  padding: 25px;
+}
+
+.invert {
+  background-color: black;
+  color: white;
+  padding: 0 2px 0 4px;
+  cursor: pointer;
+}
+
+.invert:hover {
+  background-color: #9C27B0;
+  color: white;
+  text-decoration: none;
+}

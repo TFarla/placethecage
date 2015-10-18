@@ -1,4 +1,4 @@
-from flask import Flask, send_file
+from flask import Flask, send_file, render_template
 from PIL import Image
 from io import BytesIO
 from os import listdir
@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'hello world!'
+    return render_template('index.html')
 
 @app.route('/<int:width>', defaults={'height': None})
 @app.route('/<int:width>/<int:height>')
